@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Moq_POC.HttpHelper;
 using Moq_POC.Services;
 using System;
 using System.Collections.Generic;
@@ -39,6 +40,8 @@ namespace Moq_POC
 			});
 			services.AddSingleton<IPaymentService, PaymentService>();
 			services.AddSingleton<IShipmentService, ShipmentService>();
+			services.AddSingleton<IProductService, ProductService>();
+			services.AddSingleton<IHttpFacade, HttpFacade>();
 			services.AddControllers();
 		}
 

@@ -1,0 +1,11 @@
+{
+	"product": {
+		"redPrice": {
+			"price": 9.99,
+			"currency": "USD",
+			"referenceFlag": false,
+			"startDate": 1667947500000,
+			"endDate": 1983566700000
+		}
+	}
+}

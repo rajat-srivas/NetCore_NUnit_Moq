@@ -8,7 +8,7 @@ using System.Text.Json;
 
 namespace test_moq_poc
 {
-	public class CartControllerTest
+	public class CartTest
 	{
 		private ICartService cartService;
 		private Mock<PaymentService> paymentServicePMoq;
@@ -36,7 +36,7 @@ namespace test_moq_poc
 		[TestCase(5, "40410000111145610", true, 9,false, true, "Payment Failed")] // fail as payment failed on third party
 		[TestCase(8, "40410000111145610", true, 9, true, false, "Something went wrong with the shipment!!!")] // fail as shipment failed
 		[TestCase(4, "40410000111145610", true,9,true, true, "Item Shipped")] // pass
-		public void PaymentService_CorrectCard_ReturnsCharged(double amount, string cNumber, bool validDate, int quantity, 
+		public void CartService_Validated_ShipsProduct(double amount, string cNumber, bool validDate, int quantity, 
 			bool paymentSuccess, bool shipmentSuccess, string expectedResult)
 		{
 			

@@ -17,8 +17,4 @@
     <ProjectReference Include="..\Moq_POC\Moq_POC.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Mocked_Response\" />
-  </ItemGroup>
-
 </Project>

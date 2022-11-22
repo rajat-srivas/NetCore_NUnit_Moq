@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace Moq_POC.Services
 {
@@ -46,4 +47,23 @@ namespace Moq_POC.Services
 		public List<CartItem> CartItems { get; set; }
 
 	}
+	public class RedPrice
+	{
+		public string currency { get; set; }
+		public double price { get; set; }
+	}
+
+	public class Product
+	{
+		[JsonPropertyName("redPrice")]
+		public RedPrice RedPrice { get; set; }
+
+	}
+
+	public class ProductPrice
+	{
+		[JsonPropertyName("product")]
+		public Product Product { get; set; }
+	}
+
 }
