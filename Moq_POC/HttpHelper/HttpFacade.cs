@@ -19,7 +19,7 @@ namespace Moq_POC.HttpHelper
 				Headers =
 					{
 						{ "user-agent", "vscode-restclient" },
-						{ "x-rapidapi-key", "c0ed669beamshd956824cd0516bap1bed7ejsnfb1246bdd8c5" },
+						{ "x-rapidapi-key", "<MY_API_KEY>" },
 						{ "x-rapidapi-host", "apidojo-hm-hennes-mauritz-v1.p.rapidapi.com" },
 					},
 			};
